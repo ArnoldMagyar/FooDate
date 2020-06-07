@@ -1,53 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/menuBtn"
+        android:layout_width="114dp"
+        android:layout_height="107dp"
         android:background="@drawable/menu"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
 
     <TextView
         android:id="@+id/nevTextView"
         android:layout_width="145dp"
-        android:layout_height="120dp"
+        android:layout_height="107dp"
         android:text="Név"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/menuBtn"
+        app:layout_constraintEnd_toStartOf="@+id/menuBtn"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/idTextView"
-        android:layout_width="145dp"
-        android:layout_height="120dp"
+        android:layout_width="153dp"
+        android:layout_height="109dp"
         android:text="ID"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toTopOf="@+id/arTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/menuBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tavTextView"
         android:layout_width="200dp"
         android:layout_height="60dp"
+        android:layout_marginTop="44dp"
         android:text="Távolság:"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="400dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arSeekBar" />
 
     <TextView
         android:id="@+id/arTextView"
         android:layout_width="200dp"
         android:layout_height="60dp"
+        android:layout_marginTop="40dp"
         android:text="Árkategória:"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuBtn" />
 
     <TextView
         android:id="@+id/partnerTextView"
@@ -55,27 +74,37 @@
         android:layout_height="60dp"
         android:text="Partner:"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tavSeekBar"
+        app:layout_constraintVertical_bias="0.478" />
 
     <SeekBar
         android:id="@+id/arSeekBar"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_width="333dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="36dp"
         android:max="4"
         android:progress="2"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="290dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arTextView" />
 
     <SeekBar
         android:id="@+id/tavSeekBar"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_width="309dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="56dp"
         android:max="300"
         android:progress="50"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tavTextView" />
 
 </android.support.constraint.ConstraintLayout>

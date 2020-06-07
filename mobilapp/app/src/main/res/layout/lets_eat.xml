@@ -12,48 +12,30 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:background="@drawable/menu"
-        app:layout_constraintBottom_toTopOf="@+id/keresBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013" />
-
-    <Button
-        android:id="@+id/keresBtn"
-        android:layout_width="411dp"
-        android:layout_height="301dp"
-        android:background="@drawable/keres"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/beallitasBtn"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:background="@drawable/beallitas"
+        android:background="@drawable/nemszeret"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tetszettBtn"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keresBtn"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintTop_toTopOf="@+id/tobbBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/tetszettBtn"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
-        android:background="@drawable/lajkolt"
+        android:background="@drawable/szeret"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/keresBtn" />
+        app:layout_constraintTop_toTopOf="@+id/tobbBtn" />
 
     <TextView
         android:id="@+id/nevTextView"
@@ -61,12 +43,10 @@
         android:layout_height="120dp"
         android:text="Név"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/keresBtn"
         app:layout_constraintEnd_toStartOf="@+id/menuBtn"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/idTextView"
@@ -74,11 +54,30 @@
         android:layout_height="120dp"
         android:text="ID"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/keresBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/menuBtn"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tobbBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/tobb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tetszettBtn"
+        app:layout_constraintStart_toEndOf="@+id/beallitasBtn" />
+
+    <ImageView
+        android:id="@+id/rndView"
+        android:layout_width="409dp"
+        android:layout_height="468dp"
+        app:layout_constraintBottom_toTopOf="@+id/tobbBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuBtn"
+        app:layout_constraintVertical_bias="0.478"
+        tools:srcCompat="@drawable/img_0" />
 
 </android.support.constraint.ConstraintLayout>
