@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/menu"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/nevTextView"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:text="Név"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:text="ID"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tavTextView"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Távolság:"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/arTextView"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Árkategória:"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <TextView
+        android:id="@+id/partnerTextView"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Partner:"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <SeekBar
+        android:id="@+id/arSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:max="4"
+        android:progress="2"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <SeekBar
+        android:id="@+id/tavSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:max="300"
+        android:progress="50"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+</android.support.constraint.ConstraintLayout>

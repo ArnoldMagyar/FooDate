@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/menu"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/keresBtn"
+        android:layout_width="411dp"
+        android:layout_height="301dp"
+        android:background="@drawable/keres"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Button
+        android:id="@+id/beallitasBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/beallitas"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="550dp" />
+
+
+    <Button
+        android:id="@+id/tetszettBtn"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/lajkolt"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="550dp"/>
+
+    <TextView
+        android:id="@+id/nevTextView"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:text="Név"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:text="ID"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</android.support.constraint.ConstraintLayout>
